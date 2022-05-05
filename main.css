@@ -1,0 +1,148 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+  background-image: url('img/Photo\ by\ Pavel\ Danilyuk\ from\ Pexels.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+ width: 80%;
+ margin: 8vh auto;
+ font-family: 'open sans', roboto, sans-serif; 
+}
+
+.cards {
+ display: flex;
+ margin-bottom: 3vh;
+
+}
+.cards div {
+ height: 30vh;
+ flex-grow: 1;
+ margin: 10px;
+ border: 3px solid rgb(107, 104, 104);
+}
+
+.play {
+ display: flex;
+}
+input, button {
+    flex-grow: 1;
+}
+.play input{
+ height: 90px;
+ font-size: 40px;
+ padding: 10px;
+ width: 400px;
+ border: 3px solid black;
+ text-align: center;
+}
+.play button {
+ height:90px;
+ text-align: center;
+ padding: 20px 60px;
+ font-size: 40px;
+ text-transform: uppercase;
+ background-color: rgb(41, 40, 40);
+ border: 2px solid gray;
+ color: white;
+ cursor: pointer;
+ letter-spacing: 6px;
+ transition: .2s linear;
+}
+.play button:hover {
+    background-color: rgb(59, 58, 58);
+}
+
+.cash {
+ margin: 60px 0 30px;
+}
+.cash, .statistics {
+ font-size: 30px;
+ text-align: center;
+ font-weight: bold;
+ padding: 8px;
+ text-transform: uppercase;
+ background-color: rgb(165, 161, 155);
+}
+
+
+/* Media: */
+@media (max-width: 1024px) {
+ .container {
+   width: 90%;
+ }
+ .play input{
+  height: 70px;
+  font-size: 30px;
+  display: block;
+ }
+ .play button {
+  height: 70px;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px ;
+ }
+}
+
+@media (max-width: 685px) {
+  .container {
+    margin: 4vh auto;
+  }
+  .play {  
+      flex-direction: column;
+  }
+  .play input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 465px) {
+  body {
+    overflow: auto;
+    background-size: auto;
+  }
+  .container {
+    width: 80%;
+  }
+   h1 {
+    margin-bottom: 5px;
+  }
+  .cards {
+    flex-direction: column;
+   }
+   .cards div {
+    height: 25vh;
+    margin: 5px;
+   }
+  .cash {
+    margin: 30px 0 20px;
+    font-size: 21px;
+   }
+  .statistics {
+     font-size: 21px;
+   }
+  .play input{
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    padding: 0;
+  }
+  .play input, .play button {
+    width: 100%;
+  }
+  .play button {
+    font-size: 23px;
+    letter-spacing: 2px;
+    overflow: hidden;
+  }
+}
