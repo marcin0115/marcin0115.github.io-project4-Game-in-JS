@@ -1,1 +1,1 @@
-# Game in JS (OOP)
+# Game in JS
