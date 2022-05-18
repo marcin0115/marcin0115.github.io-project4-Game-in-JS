@@ -1,11 +1,11 @@
 # Game in JS
 
-Game made in JavaScrit (object-oriented programming) in which we draw colors.
+Game created in JavaScrit (object-oriented programming) in which we draw colors.
 
 Structure of project consists of 5 classes.
-In class Pocket we set initial value of the wallet. After each game this value is updated. From her amount depends we can play again.
+In class Pocket we set initial value of the wallet. After each game this value is updated.
 Class Draw draws colors.
-In class Score we download information about winner and about value of the possible win.
+In class Score we download information about winner and about value of the winning prize.
 Class Stats store information about all games, wins and losses.
 Class Game is main class. Join the other classes and defines how the game works.
 
